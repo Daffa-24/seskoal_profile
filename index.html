@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seskoal - Sekolah Staf dan Komando AL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">SES<span>KOAL</span></div>
+
+          <!-- Toggle hamburger menu -->
+          <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+          <ul class="nav-links" id="navMenu">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <h1 data-animate>Sekolah Staf dan Komando Angkatan Laut</h1>
+        <p data-animate>
+          Membentuk pemimpin maritim yang tangguh dan berwawasan strategis
+        </p>
+        <a href="#tentang" class="btn" data-animate>Jelajahi</a>
+      </div>
+    </header>
+
+    <section id="tentang" class="section">
+      <div class="container">
+        <h2 data-animate>Tentang Seskoal</h2>
+        <p data-animate>
+          Seskoal adalah lembaga pendidikan strategis TNI Angkatan Laut yang
+          bertujuan mencetak perwira tinggi yang memiliki kemampuan kepemimpinan
+          dan wawasan strategis dalam menghadapi tantangan global dan regional.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="pimpinan">
+      <div class="container">
+        <h2 data-animate>Profil Komandan</h2>
+        <div class="profile-box" data-animate>
+          <img
+            src="https://source.unsplash.com/150x150/?officer,navy"
+            alt="Komandan"
+          />
+          <div class="profile-info">
+            <h3>Laksma TNI Ahmad Sulaiman, S.E.</h3>
+            <p>
+              Komandan Seskoal, ahli strategi maritim dengan pengalaman
+              internasional. Memimpin sejak 2023.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="section dark">
+      <div class="container">
+        <h2 data-animate>Program Unggulan</h2>
+        <div class="cards">
+          <div class="card" data-animate>
+            <h3>Manajemen Pertahanan Laut</h3>
+            <p>
+              Pendidikan untuk mencetak pemimpin maritim dalam pengambilan
+              keputusan strategis.
+            </p>
+          </div>
+          <div class="card" data-animate>
+            <h3>Strategi Keamanan Maritim</h3>
+            <p>
+              Memahami dinamika keamanan laut dan penerapannya dalam diplomasi
+              pertahanan.
+            </p>
+          </div>
+          <div class="card" data-animate>
+            <h3>Latihan Gabungan</h3>
+            <p>
+              Simulasi medan tempur dan sinergi lintas matra dalam pertahanan
+              negara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeri" class="section">
+      <div class="container">
+        <h2 data-animate>Galeri</h2>
+        <div class="gallery">
+          <img
+            src="https://source.unsplash.com/300x200/?navy,ship"
+            alt="Kegiatan 1"
+            data-animate
+          />
+          <img
+            src="https://source.unsplash.com/300x200/?military,officer"
+            alt="Kegiatan 2"
+            data-animate
+          />
+          <img
+            src="https://source.unsplash.com/300x200/?warship"
+            alt="Kegiatan 3"
+            data-animate
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section dark">
+      <div class="container">
+        <h2 data-animate>Kontak Kami</h2>
+        <form id="contactForm" data-animate>
+          <input type="text" placeholder="Nama Anda" required />
+          <input type="email" placeholder="Email Anda" required />
+          <textarea placeholder="Pesan Anda" required></textarea>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Seskoal. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
