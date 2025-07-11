@@ -62,11 +62,13 @@ body {
   transition: background-color 0.3s ease;
   padding: 5px;
   border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
 /* Hover: ubah latar belakang atau warna batang */
 .menu-toggle:hover {
   background-color: rgba(252, 211, 77, 0.2);
+  transform: scale(1.1);
 }
 
 .menu-toggle:hover .bar {
@@ -88,21 +90,31 @@ body {
   list-style: none;
   display: flex;
   gap: 25px;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease;
+  transform-origin: top center;
 }
+
+.nav-links:hover {
+  transform: scale(1.03);
+}
+
+/* Zoom saat hover ke setiap item menu */
 .nav-links li a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   font-size: 16px;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Efek saat hover */
 .nav-links li a:hover {
-  background-color: #fcd34d; 
-  color: #001f3f; 
+  transform: scale(1.1); /* efek zoom individual */
+  background-color: #fcd34d; /* kuning emas */
+  color: #001f3f; /* biru gelap */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .hero-content h1 {
@@ -144,7 +156,16 @@ body {
 
 .section {
   padding: 80px 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-origin: center center;
 }
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
 .section h2 {
   text-align: center;
   margin-bottom: 30px;
@@ -218,6 +239,7 @@ footer {
   background: #003366;
   color: #fff;
 }
+
 
 /* Responsive: menu jadi dropdown */
 @media (max-width: 768px) {
